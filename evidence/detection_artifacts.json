@@ -1,0 +1,11 @@
+{
+  "case_id": "BP-2026-001",
+  "target_url": "http://secure-login-brand-fake.com/login",
+  "detection_source": "Automated Crawler",
+  "artifacts": {
+    "ip_address": "192.168.1.50",
+    "sha256_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "http_header_server": "nginx/1.18.0"
+  }
+}
