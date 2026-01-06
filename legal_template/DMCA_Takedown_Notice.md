@@ -1,4 +1,4 @@
-### 📄 Formal DMCA Takedown Notice
+### Formal DMCA Takedown Notice
 **To:** Abuse Department [Hosting Provider/Marketplace Name]
 **Subject:** Urgent: Trademark Infringement and Fraudulent Activity - [Brand Name]
 
