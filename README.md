@@ -38,4 +38,4 @@ The final stage of the enforcement lifecycle.
 ---
 
 ## 🚀 Future Research: AI-Integrated Takedowns
-As a student of **Cybersecurity and Machine Learning**, I am currently expanding this lab to include automated risk classification models. The goal is to use NLP and Computer Vision to automatically detect brand impersonation and prioritize enforcement actions without manual intervention.
+I am currently expanding this lab to include automated risk classification models. The goal is to use NLP and Computer Vision to automatically detect brand impersonation and prioritize enforcement actions without manual intervention.
