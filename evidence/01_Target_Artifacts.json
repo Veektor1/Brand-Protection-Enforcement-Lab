@@ -1,0 +1,20 @@
+{
+  "case_metadata": {
+    "case_id": "BP-2026-001",
+    "analyst": "[Your First & Last Name]",
+    "timestamp_gmt": "2026-01-06T13:30:00Z",
+    "classification": "HIGH-RISK / PHISHING"
+  },
+  "target_details": {
+    "url": "http://brand-secure-update.com/login",
+    "ip_address": "185.199.108.153",
+    "hosting_provider": "DigitalOcean (Simulated)",
+    "registrar": "NameCheap (Simulated)"
+  },
+  "technical_artifacts": {
+    "server_header": "nginx/1.18.0 (Ubuntu)",
+    "content_type": "text/html; charset=UTF-8",
+    "ssl_status": "None / Self-Signed",
+    "phishing_kit_detected": "Universal-Login-v4"
+  }
+}
