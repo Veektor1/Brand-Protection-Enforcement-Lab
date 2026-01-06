@@ -1,44 +1,50 @@
-# 🛡️ Brand Protection & Enforcement Lab
+# 🛡️ Brand Protection & Enforcement Lab (AI-Enhanced)
 
 **Author:** Chizoba Victor Ekere  
-**Focus:** Digital Evidence Preservation, Risk Triage, and ML-Driven Automation  
+**Focus:** Forensic Preservation, ML-Driven Triage, and API Integration  
 **Case Reference:** BP-2026-001
 
 ---
 
 ## 📌 Project Overview
-This laboratory simulates a professional end-to-end brand protection workflow. It addresses the operational "friction" between threat detection and enforcement by providing a structured, centralized system for identifying, classifying, and taking down fraudulent infrastructure.
+This laboratory simulates a professional end-to-end brand protection lifecycle. It addresses the operational "friction" between threat detection and enforcement by providing a structured, automated workflow for identifying, classifying, and taking down fraudulent infrastructure.
 
-The project demonstrates how to move from raw detection to a formal legal hand-off while maintaining a forensic audit trail.
+### ⚙️ System Architecture & Data Flow
+The lab follows a professional **Detection -> Ingestion -> Analysis -> Action** pipeline:
+
+1.  **Data Acquisition (Scraper):** Monitoring external sources (CT Logs, DNS Feeds) to identify suspicious registrations.
+2.  **ML Triage (Classifier):** A Python-based model analyzes "Features" (Domain entropy, SSL status, Brand keywords) to calculate a Risk Score.
+3.  **System Integration (API):** High-risk alerts are pushed into a Case Management System (e.g., Ratchet) via API, pre-filling enforcement templates.
+4.  **Enforcement:** Formal Takedown Notices are dispatched to hosting providers using forensically preserved evidence.
 
 ---
 
-## 📂 Repository Structure & Workflow
+## 📂 Repository Structure
 
-### 📁 [evidence](./evidence)
-This folder serves as the centralized repository for the "Digital DNA" of the threat.
-* **[01_Target_Artifacts.json](./evidence/01_Target_Artifacts.json)**: Captures technical metadata including IP addresses, server headers, and detection source.
-* **[02_Evidence_Manifest.md](./evidence/02_Evidence_Manifest.md)**: A forensic log documenting collected artifacts with SHA-256 integrity hashes to ensure a verified chain of custody.
+### 📁 [01_Evidence_Preservation](./evidence)
+Centralized repository for the "Digital DNA" of the threat.
+* **[01_Target_Artifacts.json](./evidence/01_Target_Artifacts.json)**: Technical metadata (IPs, Server Headers).
+* **[02_Evidence_Manifest.md](./evidence/02_Evidence_Manifest.md)**: Forensic log with SHA-256 integrity hashes.
 
-### 📁 [workflow](./workflow)
-Simulates the critical risk assessment phase required for enterprise-grade triage.
-* **[risk_assessment.md](./workflow/risk_assessment.md)**: Categorizes the threat level (High/Medium/Low) and defines the routing logic for escalation to Legal or Trust & Safety teams.
+### 📁 [02_Workflow_&_Triage](./workflow)
+Simulates the assessment phase where detections are prioritized.
+* **[risk_assessment.md](./workflow/risk_assessment.md)**: Defines routing logic for escalation to Legal or Trust & Safety.
 
-### 📁 [legal_template](./legal_template)
-The final stage of the enforcement lifecycle where detection moves to action.
-* **[DMCA_Takedown_Notice.md](./legal_template/DMCA_Takedown_Notice.md)**: A standardized, evidence-backed notice designed for formal submission to ISPs and marketplace abuse departments.
+### 📁 [03_Enforcement_Actions](./legal_template)
+* **[DMCA_Takedown_Notice.md](./legal_template/DMCA_Takedown_Notice.md)**: Standardized notice for rapid ISP submission.
 
-### 📁 [Future_Automation_ML](./Future_Automation_ML) 🚀
-Demonstrates the intersection of Cybersecurity and Machine Learning.
-* **[auto_classifier.py](./Future_Automation_ML/auto_classifier.py)**: A Python prototype for automated lexical risk analysis of URLs.
-* **[automation_strategy.md](./Future_Automation_ML/automation_strategy.md)**: Roadmap for scaling enforcement via NLP (domain entropy) and Computer Vision (logo misuse detection).
+### 📁 [04_Future_Automation_ML](./04_Future_Automation_ML) 🚀
+The "Automation Engine" of the lab.
+* **[auto_classifier.py](./04_Future_Automation_ML/auto_classifier.py)**: Prototype for automated lexical risk analysis.
+* **[metadata_scraper.py](./04_Future_Automation_ML/metadata_scraper.py)**: Simulated scraper demonstrating how features are extracted for ML model training.
+* **[automation_strategy.md](./04_Future_Automation_ML/automation_strategy.md)**: Roadmap for Scaling (NLP & Computer Vision).
 
 ---
 
 ## 🛠️ Technical Skillset Demonstrated
-* **Evidence Preservation:** Capturing logs, headers, and hashes to support legal audit trails.
-* **Operational Triage:** Prioritizing high-risk threats to mitigate brand damage.
-* **Automation Mindset:** Applying Python and ML logic to reduce manual intervention in the enforcement pipeline.
+* **System Integration:** Understanding API-driven workflows between scanners and case management.
+* **Data Engineering:** Extracting features for ML training from Cert Transparency logs and DNS data.
+* **Operational Strategy:** Reducing "time-to-takedown" through automated pre-triage.
 
 ---
-*Developed to demonstrate the technical and operational mindset required for modern Brand Protection teams.*
+*This lab demonstrates the technical and operational mindset required for modern, proactive Brand Protection teams.*
