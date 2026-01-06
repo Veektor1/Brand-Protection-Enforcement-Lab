@@ -1,41 +1,44 @@
 # 🛡️ Brand Protection & Enforcement Lab
 
-**Author:** Victor [Your Last Name]  
-**Focus:** Digital Evidence Preservation, Risk Triage, and Stakeholder Hand-off  
+**Author:** Chizoba Victor Ekere  
+**Focus:** Digital Evidence Preservation, Risk Triage, and ML-Driven Automation  
 **Case Reference:** BP-2026-001
 
 ---
 
 ## 📌 Project Overview
-This laboratory simulates a professional brand protection lifecycle. It demonstrates how to move from the initial detection of a threat to a centralized enforcement action, ensuring that technical artifacts and legal context are preserved throughout the process.
+This laboratory simulates a professional end-to-end brand protection workflow. It addresses the operational "friction" between threat detection and enforcement by providing a structured, centralized system for identifying, classifying, and taking down fraudulent infrastructure.
 
-The workflow is designed to reduce the "friction" between security analysts and enforcement teams (Legal/Trust & Safety) by using a standardized system of record.
+The project demonstrates how to move from raw detection to a formal legal hand-off while maintaining a forensic audit trail.
 
 ---
 
 ## 📂 Repository Structure & Workflow
 
 ### 📁 [evidence](./evidence)
-This folder contains the forensic "Digital DNA" of the detected threat.
-* **[01_Target_Artifacts.json](./evidence/01_Target_Artifacts.json)**: Technical metadata including IP addresses, server headers, and detection timestamps.
-* **[02_Evidence_Manifest.md](./evidence/02_Evidence_Manifest.md)**: A centralized log of collected artifacts with SHA-256 integrity hashes to ensure a verified chain of custody.
+This folder serves as the centralized repository for the "Digital DNA" of the threat.
+* **[01_Target_Artifacts.json](./evidence/01_Target_Artifacts.json)**: Captures technical metadata including IP addresses, server headers, and detection source.
+* **[02_Evidence_Manifest.md](./evidence/02_Evidence_Manifest.md)**: A forensic log documenting collected artifacts with SHA-256 integrity hashes to ensure a verified chain of custody.
 
 ### 📁 [workflow](./workflow)
-Simulates the critical assessment phase where detections are prioritized for action.
-* **[risk_assessment.md](./workflow/risk_assessment.md)**: Categorizes threats as High, Medium, or Low risk and defines the routing logic for team escalation.
+Simulates the critical risk assessment phase required for enterprise-grade triage.
+* **[risk_assessment.md](./workflow/risk_assessment.md)**: Categorizes the threat level (High/Medium/Low) and defines the routing logic for escalation to Legal or Trust & Safety teams.
 
 ### 📁 [legal_template](./legal_template)
-The final stage of the enforcement lifecycle.
-* **[DMCA_Takedown_Notice.md](./legal_template/DMCA_Takedown_Notice.md)**: A standardized, evidence-backed notice designed for rapid submission to ISPs and marketplace abuse departments.
+The final stage of the enforcement lifecycle where detection moves to action.
+* **[DMCA_Takedown_Notice.md](./legal_template/DMCA_Takedown_Notice.md)**: A standardized, evidence-backed notice designed for formal submission to ISPs and marketplace abuse departments.
+
+### 📁 [Future_Automation_ML](./Future_Automation_ML) 🚀
+Demonstrates the intersection of Cybersecurity and Machine Learning.
+* **[auto_classifier.py](./Future_Automation_ML/auto_classifier.py)**: A Python prototype for automated lexical risk analysis of URLs.
+* **[automation_strategy.md](./Future_Automation_ML/automation_strategy.md)**: Roadmap for scaling enforcement via NLP (domain entropy) and Computer Vision (logo misuse detection).
 
 ---
 
-## 🛠️ Key Skills Demonstrated
-* **Forensic Preservation:** Capturing logs, headers, and hashes to support legal proceedings.
-* **Operational Triage:** Applying risk-based classification to large volumes of detections.
-* **Integrated Enforcement:** Bridging the gap between technical security findings and legal enforcement actions.
+## 🛠️ Technical Skillset Demonstrated
+* **Evidence Preservation:** Capturing logs, headers, and hashes to support legal audit trails.
+* **Operational Triage:** Prioritizing high-risk threats to mitigate brand damage.
+* **Automation Mindset:** Applying Python and ML logic to reduce manual intervention in the enforcement pipeline.
 
 ---
-
-## 🚀 Future Research: AI-Integrated Takedowns
-I am currently expanding this lab to include automated risk classification models. The goal is to use NLP and Computer Vision to automatically detect brand impersonation and prioritize enforcement actions without manual intervention.
+*Developed to demonstrate the technical and operational mindset required for modern Brand Protection teams.*
